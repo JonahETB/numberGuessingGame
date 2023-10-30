@@ -53,4 +53,15 @@ const played = false;
 
     window.checkGuess = checkGuess;
     // 'hiddenVar' is encapsulated and not directly accessible.
+
+    function inputCheck (id) {
+        let elementinput = document.getElementById(id);
+        let num = +elementinput.value;
+    
+        if (num > 100) {
+            elementinput.value = 100
+        } 
+    }
+    window.inputCheck = inputCheck;
   })();
+
